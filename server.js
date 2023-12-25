@@ -21,12 +21,7 @@ app.use(
 );
 app.use(bodyParser.json());
 
-const whitelist = [
-  "https://granularity-app.nihalwashere.xyz",
-  "https://granularity-web.nihalwashere.xyz",
-  "http://localhost:3000",
-  "http://localhost:3001"
-];
+const whitelist = ["http://localhost:3000", "http://localhost:3001"];
 
 app.use(
   cors({

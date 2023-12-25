@@ -44,7 +44,7 @@ const createFrameElement = (id, params) => {
 
   const url = id.startsWith("https")
     ? `${id}${queryParams}`
-    : `https://granularity-app.nihalwashere.xyz/form/${id}`;
+    : `http://localhost:3000/form/${id}`;
 
   // const url = `http://localhost:3000/form/${id}`  
 
