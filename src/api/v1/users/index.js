@@ -239,7 +239,7 @@ router.post("/trigger-email-verification", async (req, res) => {
       text: `Hey there, hope you are doing good!\n\nPlease verify your email by clicking on this link:\n${link}`
     };
 
-    await mg.messages().send(data);
+    // await mg.messages().send(data);
 
     return res.status(200).json({
       success: true,
@@ -406,7 +406,7 @@ router.post("/send-password-reset-instructions", async (req, res) => {
         text: `Hey there,\n\nTo get a new password for your Granularity account, just click on the link below.\n\nIf you didn't request a password reset, safely ignore this email.\n\n${link}`
       };
 
-      await mg.messages().send(data);
+      // await mg.messages().send(data);
     }
 
     return res.status(200).json({ success: true });

@@ -45,7 +45,7 @@ router.post("/", async (req, res) => {
         // })
       };
 
-      await mg.messages().send(data);
+      // await mg.messages().send(data);
     }
 
     return res.status(200).json({ success: true });
